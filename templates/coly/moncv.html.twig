@@ -1,0 +1,161 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon CV{% endblock %}
+
+{% block body %}
+<style>
+
+#div1, #div2, #div3 {
+    display: inline-block;
+    width: 33.33%; /* each div will take up one third of the container width */
+    text-align:center;
+    color:white;
+}
+
+
+/**.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}**/
+.list-unstyled{
+  color:white;
+
+}
+.col-sm-5{
+  color:white;
+
+}
+.col-sm-12{
+  color:white;
+
+}
+.entete{
+   text-align: center;
+   color:white;
+}
+.lien{
+  color:#CD5C5C;
+}
+.fab1{
+  color:#CD5C5C;
+
+}
+.lyco{
+  color:#CD5C5C;
+
+}
+.inscription{
+  color:white;
+
+}
+.contener{
+  display: flex;
+}
+.div2{
+  flex: 1;
+}
+.div3{
+  flex: 1;
+}
+
+
+
+
+
+
+
+
+
+
+</style>
+<div>
+      <h1 class="entete">ADMINISTRATEUR RESEAU</h1><br>
+
+      <div id="div1">
+          <h2>FORMATION</h2>
+          <ul>
+            <li>DIPLOME BACCALAUREAT SCIENTIFIQUE</li><br>
+            <li>INFORMATIQUE RESEAU ET TELECOMMUNICATION</li>
+          
+          </ul>
+
+      </div><br><br>
+
+
+      <div class="contener">
+          <div id="div2">
+              <h2>COMPETENCES</h2>
+
+              <ul>
+                <li>Connaissance des protocoles de réseau tels que TCP/IP, DNS, DHCP, etc. </li><br>
+                <li>Connaissance des  équipements de réseau tels que les commutateurs  </li><br>
+                <li>Connaissance des systèmes d'exploitation de réseau tels que linux </li><br>
+                <li>Connaissance des outils de surveillance de réseau tels que Wireshark </li><br>
+                <li>Connaissance des technologies de virtualisation de réseau telles que les VLANS  </li><br>
+                
+              
+              </ul>
+          </div>
+
+          <div id="div3">
+              <h2>EXPERIENCES</h2>
+                  
+              <ul>
+                <li>Connaissance des protocoles de réseau tels que TCP/IP, DNS, DHCP, etc. </li><br>
+                <li>Expérience avec les équipements de réseau tels que les commutateurs  </li><br>
+                <li>Expérience avec les outils de surveillance de réseau tels que Wireshark </li><br>
+                <li>Expérience avec les technologies de virtualisation de réseau telles que les VLANS  </li><br>
+                <li>Expérience en résolution de problèmes de réseau et de communication</li>
+              </ul>
+          </div><br><br>
+      </div>
+      <div>
+        <h2 class="inscription">Pour obtenir mon CV veuillez vous inscrire</h2>
+        <a class="btn btn-dark bg-black btn-lg" href="contact" role="button" >INSCRIPTION</a>
+
+      </div><br><br>
+
+
+
+
+
+
+
+
+
+      <footer class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-5">
+                      <h4>Contact</h4>
+                      <ul class="list-unstyled">
+                          <li>Address:21 rue jean jaures ,Roanne</li>
+                          <li>Phone: 555-555-5555</li>
+                          <li>Email: <a class="lien" href="insa.coly@etu.univ-st-etienne.fr">insa.coly@etu.univ-st-etienne.fr</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-5">
+                      <h4>suivez moi sur mes réseaux sociaux</h4>
+                      <ul class="list-unstyled list-inline"> 
+                          <li><a href="#"><i class="fab1">twitter</i></a></li>
+                          <li><a href="#"><i class="lyco"></i>linkedin</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="copyright">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-sm-12">
+                          <p>Copyright &copy; 2022-2023 R&T | All Rights Reserved</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+</div>
+
+
+
+{% endblock %}
