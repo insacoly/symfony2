@@ -6,100 +6,118 @@
 {% block body %}
 
 <style>
-.footer {
+/**.footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-}
-.footer {
+}**/
+/**.footer {
     position: absolute;
     bottom: 0;
     width: 90%;
+}**/
+
+.tous{
+    color:white;
+}.entete{
+    text-align: center;
 }
-.list-unstyled{
+.gauche{
   color:white;
+  padding-left: 50px;
+  margin-top: 20px;
 
 }
-.col-sm-3{
+.droite{
   color:white;
+  padding-left: 50px;
+  margin-top: 20px
 
-}
-.col-sm-12{
-  color:white;
-
-}
-.col-sm-6{
-    color:white;
-
-
-}
-.col-sm-5{
-    color:white;
-
-
-}
-.entete{
-    color:white;
-    padding-left: 50px;
-
-}
-.div1{
-    color:white;
-    padding-left: 50px;
-}
-
-
+} 
 
 
 </style>
 
-      <h1 class="entete">MES POINTS FORT</h1><br>
-
-      <div class="div1">
-          <h2>FORMATION</h2>
-          <ul>
-            <li>DIPLOME BACCALAUREAT SCIENTIFIQUE</li><br>
-            <li>INFORMATIQUE RESEAU ET TELECOMMUNICATION</li>
-          
-          </ul>
-
-      </div><br><br>
 
 
+<div class="tous">
+    <div class="gauche">
+        <h1 class="entete">COMPETENCES</h1><br>
+
+        <div id="div1" style=" left:80px;">
+            <h2 class="gauche">reseau informatique </h2>
+            <ul class="droite">
+                <li>Configuration du matériel Cisco (switchs)</li><br>
+                <li>Simulation de réseaux sur Cisco Packet Tracer</li><br>
+                <li>Sécurisation : VLAN, ACL</li><br>
+                <li>Détection de pannes </li><br>
+                <li>Maîtrise de plusieurs protocoles réseau : ARP, ICMP, STP, HTTP, </li><br>
+            
+            </ul>
+
+        </div><br><br>
 
 
-   
-   
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-5">
-                <h4>Contact</h4>
-                <ul class="list-unstyled">
-                    <li>Address:21 rue jean jaures ,Roanne</li>
-                    <li>Phone: 555-555-5555</li>
-                    <li>Email: <a href="insa.coly@etu.univ-st-etienne.fr">insa.coly@etu.univ-st-etienne.fr</a></li>
+        <div class="contener">
+            <div class="droite">
+                <h2>DEVELOPPEMENT WEB</h2>
+
+                <ul>
+
+                    <li>HTML, CSS</li><br>
+                    <li>Symfony</li>
+
                 </ul>
-            </div>
-            <div class="col-sm-6">
-                <h4>suivez moi sur mes réseaux sociaux</h4>
-                <ul class="list-unstyled list-inline"> 
-                    <li><a href="#"><i class="fab fa-twitter">twitter</i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin"></i>linkedin</a></li>
+            </div><br><br>
+
+            <div class="droite">
+                <h2>Télécommunications</h2>
+                    
+                <ul>
+                    <li>Étude des système de transmission</li><br>
+                    <li>Fibre optique</li>
                 </ul>
-            </div>
-        </div>
+            </div><br><br>
     </div>
-    <div class="copyright">
+
+
+
+
+
+    
+    
+    <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-                    <p>Copyright &copy; 2022-2023 R&T | All Rights Reserved</p>
+                <div class="col-sm-5">
+                    <h4>Contact</h4>
+                    <ul class="list-unstyled">
+                        <li>Address:21 rue jean jaures ,Roanne</li>
+                        <li>Phone: 07 25 65 85 </li>
+                        <li>Email: <a href="insa.coly@etu.univ-st-etienne.fr">insa.coly@etu.univ-st-etienne.fr</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <h4>suivez moi sur mes réseaux sociaux</h4>
+                    <ul class="list-unstyled list-inline"> 
+                        <li><a href="#"><i class="fab fa-twitter">twitter</i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i>linkedin</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-</footer> 
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>Copyright &copy; 2022-2023 R&T | All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> 
+
+</div>
     
 
 {% endblock %}
